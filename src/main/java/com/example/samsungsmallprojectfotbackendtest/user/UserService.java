@@ -36,6 +36,7 @@ public class UserService {
         user.setPassword(createUserDto.getPassword());
         user.setFirstName(createUserDto.getFirstName());
         user.setLastName(createUserDto.getLastName());
+        user.setTelephone(createUserDto.getTelephone());
         user.setModifiedAt(LocalDateTime.now());
         return userRepository.saveAndFlush(user);
     }
